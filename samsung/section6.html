@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" href="./section6.css">
+
+
+</head>
+<body>
+	<div class="section3">
+		<div class="youmake_wrap">
+			<div class="youmake">#YouMake</div>
+		</div>
+		<div class="tab_content">
+			
+			<input type="radio" name="tabmenu" id="tab01" checked>
+			<input type="radio" name="tabmenu" id="tab02">
+			<input type="radio" name="tabmenu" id="tab03">
+			<input type="radio" name="tabmenu" id="tab04">
+			
+			<div class="conbox con1"></div>
+			<div class="conbox con2"></div>
+			<div class="conbox con3"></div>
+			<div class="conbox con4"></div>
+		
+			<div class="btn">
+				<label for="tab01" id="tab01_label"></label>
+				<label for="tab02" id="tab02_label"></label>
+				<label for="tab03" id="tab03_label"></label>
+				<label for="tab04" id="tab04_label"></label>
+			</div>
+		</div>
+		<div class="list_style_wrap">
+			<ul class="list_style">
+				<li id="slide10"><a href="#">01 #YouMake 프로젝트</a><p>더 알아보기</p></li></ul>
+			<ul class="list_style">
+				<li id="slide11"><a href="#">02 #우리집이 영화관이 되는 순간</a><p>더 알아보기 </p></li></ul>
+			<ul class="list_style">
+				<li id="slide12"><a href="#">03 #BESPOKE가 집의 모든 순간을<br>나답게 만드는 방법</a><p>더 알아보기 </p></li></ul>
+				<ul class="list_style">	
+				<li id="slide13"><a href="#">04 #Samsung at CE 2022</a><p>더 알아보기</p></li>
+			</ul>
+		</div>
+	</div>
+
+	<script>
+	$(document).ready(function(){
+		$("#slide10").hover(function(){
+			$(".con1").show();
+			$(".con2").hide();
+			$(".con3").hide();
+			$(".con4").hide();
+	});
+		$("#slide11").hover(function(){
+			$(".con1").hide();
+			$(".con2").show();
+			$(".con3").hide();
+			$(".con4").hide();
+	});
+	$("#slide12").hover(function(){
+			$(".con1").hide();
+			$(".con2").hide();
+			$(".con3").show();
+			$(".con4").hide();
+	});
+	$("#slide13").hover(function(){
+			$(".con1").hide();
+			$(".con2").hide();
+			$(".con3").hide();
+			$(".con4").show();
+	});
+
+	});
+	</script>
+
+
+</body>
+</html>
+
+
